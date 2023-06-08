@@ -11,7 +11,7 @@ been accepted.
 
 ## License
 
-RetCCL is released under the GPLv3 License and is available for non-commercial academic purposes.
+HiCervix and HierSwin are released under the GPLv3 License and is available for non-commercial academic purposes.
 
 ### Citation
 Please use below to cite this paper if you find our work useful in your research.
