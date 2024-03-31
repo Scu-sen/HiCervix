@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+better_mistakes.egg-info/PKG-INFO
+better_mistakes.egg-info/SOURCES.txt
+better_mistakes.egg-info/dependency_links.txt
+better_mistakes.egg-info/top_level.txt
