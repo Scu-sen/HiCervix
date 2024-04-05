@@ -10,7 +10,7 @@ In this paper, we release the largest three-level hierarchical cervical dataset 
 
 HiCervix includes 40,229 cervical cells and is categorized into 29 annotated classes.   These classes are organized within a three-level hierarchical tree
 to capture fine-grained subtype information. 
-
+![这是图片](figure1.png)
 HiCervix can be downloaded from Zenodo (https://zenodo.org/records/xxx). The dataset is splitted into three parts: train, validation, and test, each associated with one csv file to label the hierarchical names as follow:
 |image_name                              |class_name |class_id|level_1|level_2|level_3    |
 |----------------------------------------|-----------|--------|-------|-------|-----------|
