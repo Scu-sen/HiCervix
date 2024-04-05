@@ -2,7 +2,16 @@
 # HiCervix (This paper is under review)
 ####
 
-We release the largest three-level hierarchical cervical dataset (HiCervix), which can be downloaded from Zenodo (https://zenodo.org/records/xxx). The dataset is splitted into three parts: train, validation, and test, each associated with one csv file to label the hierarchical names as follow:
+This repo contains the original source code of the paper _HiCervix: An Extensive Hierarchical Dataset and Benchmark for Cervical Cytology Classification_.
+
+In this paper, we release the largest three-level hierarchical cervical dataset (HiCervix), and propose a hierarchical vision transformer-based classification benchmark method (HierSwin).
+
+### HiCervix Dataset:
+
+HiCervix includes 40,229 cervical cells and is categorized into 29 annotated classes.   These classes are organized within a three-level hierarchical tree
+to capture fine-grained subtype information. 
+
+HiCervix can be downloaded from Zenodo (https://zenodo.org/records/xxx). The dataset is splitted into three parts: train, validation, and test, each associated with one csv file to label the hierarchical names as follow:
 |image_name                              |class_name |class_id|level_1|level_2|level_3    |
 |----------------------------------------|-----------|--------|-------|-------|-----------|
 |xxx.jpg|AGC-EMC-NOS|18      |AGC    |AGC-NOS|AGC-EMC-NOS|
@@ -10,11 +19,13 @@ We release the largest three-level hierarchical cervical dataset (HiCervix), whi
 
 
 ### HierSwin(benchmark method):
-The benchmark method of HierSwin and all the other methods implemented in this manuscript are organized in this repository.  
+HierSwin is a hierarchical vision transformer-based classification network, where Swin transformer is first adopted for fine-grained feature extraction and a hierarchical classification head is integrated into the backbone network to merge the
+information of fine-grained features.
+<!-- The benchmark method of HierSwin and all the other methods implemented in this manuscript are organized in this repository. --> 
+The implementation of HierSwin is based on the repo https://github.com/fiveai/making-better-mistakes.
 * For the training of HierSwin, 
 
 ```
-cd experiments
 python3 scripts/start_training.py
 ```
 
@@ -34,5 +45,4 @@ HiCervix and HierSwin are released under the GPLv3 License and is available for 
 
 ### Citation
 Please use below to cite this paper if you find our work useful in your research.
-
 
