@@ -23,6 +23,13 @@ HierSwin is a hierarchical vision transformer-based classification network, wher
 information of fine-grained features.
 <!-- The benchmark method of HierSwin and all the other methods implemented in this manuscript are organized in this repository. --> 
 The implementation of HierSwin is based on the repo https://github.com/fiveai/making-better-mistakes.
+
+├── test
+├── test.csv
+├── train
+├── train.csv
+├── val
+├── val.csv
 * For the training of HierSwin, 
 
 ```
