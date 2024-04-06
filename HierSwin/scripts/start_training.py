@@ -38,7 +38,6 @@ from better_mistakes.model.losses import HierarchicalCrossEntropyLoss, CosineLos
 from better_mistakes.trees import load_hierarchy, get_weighting, load_distances, get_classes, DistanceDict
 
 from dataset import InputDataset
-# from torchstat import stat
 
 
 MODEL_NAMES = sorted(name for name in models.__dict__ if name.islower() and not name.startswith("__") and callable(models.__dict__[name]))
@@ -46,11 +45,6 @@ MODEL_NAMES.append('swinT')
 LOSS_NAMES = ["cross-entropy", "soft-labels", "hierarchical-cross-entropy", "cosine-distance", "ranking-loss", "cosine-plus-xent", "yolo-v2"]
 OPTIMIZER_NAMES = ["adagrad", "adam", "adam_amsgrad", "rmsprop", "SGD"]
 DATASET_NAMES = ["tiered-imagenet-84", "inaturalist19-84", "tiered-imagenet-224", "inaturalist19-224", "tct"]
-
-
-
-train_csv = 'dataset/hierarchy_classification/version2023/train_image_path_mbm.csv'
-val_csv = 'dataset/hierarchy_classification/version2023/val_image_path_mbm.csv'
 
 
 print('==> Preparing data..')
@@ -76,8 +70,6 @@ def load_data(train_csv, val_csv, distributed):
     train_albu_transform = albu.Compose([
         albu.PadIfNeeded(min_height=1000, min_width=1000,
             border_mode=cv2.BORDER_CONSTANT, value=(255, 255, 255), always_apply=True),
-        #albu.Rotate(limit=180, interpolation=cv2.INTER_LINEAR,
-         #   border_mode=cv2.BORDER_CONSTANT, value=(255, 255, 255), p=0.8),
         #albu.CenterCrop(224, 224, always_apply=True),
         albu.RandomCrop(700, 700, always_apply=True),
         albu.RandomBrightnessContrast(),
@@ -91,7 +83,6 @@ def load_data(train_csv, val_csv, distributed):
 #             albu.MedianBlur(blur_limit=7, p=0.5),
 #             #albu.MotionBlur(blur_limit=7, p=0.5),
 #             ], p=0.5),
-        #albu.Resize(448, 448, interpolation=cv2.INTER_LINEAR, always_apply=True),
         albu.Resize(384, 384, interpolation=cv2.INTER_LINEAR, always_apply=True),
         ])
 
@@ -99,7 +90,6 @@ def load_data(train_csv, val_csv, distributed):
         albu.PadIfNeeded(min_height=1000, min_width=1000,
             border_mode=cv2.BORDER_CONSTANT, value=(255, 255, 255), always_apply=True),
         albu.CenterCrop(700, 700, always_apply=True),
-        #albu.Resize(448, 448, interpolation=cv2.INTER_LINEAR, always_apply=True),
         albu.Resize(384, 384, interpolation=cv2.INTER_LINEAR, always_apply=True),
         ])
 
@@ -139,9 +129,8 @@ def main_worker(gpus_per_node, opts):
 #     train_dir = os.path.join(opts.data_path, "train")
 #     val_dir = os.path.join(opts.data_path, "val")
     
-    #batch_size = 64
-    batch_size = 16
-    dataset, dataset_test, train_sampler, test_sampler = load_data(train_csv, val_csv, False)
+    batch_size = opts.batch_size
+    dataset, dataset_test, train_sampler, test_sampler = load_data(opts.train_csv, opts.val_csv, False)
     train_loader = torch.utils.data.DataLoader(
         dataset, batch_size=batch_size,
         sampler=train_sampler, num_workers=32, pin_memory=True, drop_last=True)
@@ -169,7 +158,7 @@ def main_worker(gpus_per_node, opts):
 
     # Adjust the number of epochs to the size of the dataset
     num_batches = len(train_loader)
-    opts.epochs = 50#int(round(opts.num_training_steps / num_batches))
+    # opts.epochs = 50#int(round(opts.num_training_steps / num_batches))
     print('Number of epoches: {}'.format(opts.epochs))
 
     # Load hierarchy and classes ------------------------------------------------------------------------------------------------------------------------------
@@ -186,11 +175,9 @@ def main_worker(gpus_per_node, opts):
         classes, _ = get_classes(hierarchy, output_all_nodes=True)
     else:
 #         classes = train_dataset.classes
-        classes =  ['其他正常细胞','宫颈管细胞','修复细胞','化生细胞','糖原溶解细胞','萎缩性改变','子宫内膜细胞','深染细胞团',
-               'ASC-US','LSIL','ASC-H','HSIL', 'SCC',
-                'AGC-FN', #'AGC','AGC-NOS', 'ADC',  to check AGC-FN的顺序？
-                '非典型颈管腺细胞','非典型子宫内膜细胞', '颈管腺癌','子宫内膜腺癌',  
-               '念珠菌','放线菌','滴虫','疱疹病毒感染','细菌性阴道病']
+        classes =  ['Normal', 'ECC', 'RPC', 'MPC', 'PG', 'Atrophy', 'EMC', 'HCG', 'ASC-US',
+                     'LSIL', 'ASC-H', 'HSIL', 'SCC', 'AGC-FN', 'AGC-ECC-NOS', 'AGC-EMC-NOS',
+                      'ADC-ECC', 'ADC-EMC', 'FUNGI', 'ACTINO', 'TRI', 'HSV', 'CC']
 
     opts.num_classes = len(classes)
 
@@ -402,8 +389,10 @@ if __name__ == "__main__":
     parser.add_argument("--dropout", default=0.5, type=float, help="Prob of dropout for network FC layer")
     parser.add_argument("--data_augmentation", type=boolean, default=True, help="Train with basic data augmentation")
     parser.add_argument("--num_training_steps", default=200000, type=int, help="number of total steps to train for (num_batches*num_epochs)")
+    parser.add_argument("--epochs", default=50, type=int, help="training epochs")
+
     parser.add_argument("--start-epoch", default=0, type=int, help="manual epoch number (useful on restarts)")
-    parser.add_argument("--batch-size", default=32, type=int, help="total batch size")
+    parser.add_argument("--batch-size", default=8, type=int, help="total batch size")
     parser.add_argument("--shuffle_classes", default=False, type=boolean, help="Shuffle classes in the hierarchy")
     parser.add_argument("--beta", default=0, type=float, help="Softness parameter: the higher, the closer to one-hot encoding")
     parser.add_argument("--alpha", type=float, default=0.4, help="Decay parameter for hierarchical cross entropy.")
@@ -419,7 +408,10 @@ if __name__ == "__main__":
     parser.add_argument("--use_fc_batchnorm", default=False, type=boolean, help="Batchnorm layer in network head")
     # Data/paths ----------------------------------------------------------------------------------------------------------------------------------------------
     parser.add_argument("--data", default="tiered-imagenet-224", help="id of the dataset to use: | ".join(DATASET_NAMES))
-    parser.add_argument("--target_size", default=224, type=int, help="Size of image input to the network (target resize after data augmentation)")
+    parser.add_argument("--target_size", default=384, type=int, help="Size of image input to the network (target resize after data augmentation)")
+    parser.add_argument("--train-csv", default='train_hierswin.csv', help="train csv of HiCervix")
+    parser.add_argument("--val-csv", default='val_hierswin.csv', help="val csv of HiCervix")
+
     parser.add_argument("--data-paths-config", help="Path to data paths yaml file", default="../data_paths.yml")
     parser.add_argument("--data-path", default=None, help="explicit location of the data folder, if None use config file.")
     parser.add_argument("--data_dir", default="../data/", help="Folder containing the supplementary data")
