@@ -52,6 +52,7 @@ The hierarchical tree structure and lowest-common-tree distances files were gene
 ```
 For more details on the preprocessing of the Hierarchical structure of HiCervix, please see the ``` HiCervix_pre-processing.ipynb```
 #### Training and evaluation
+The CSV above files are used to specify the input for the training, evaluation, and test dataset (```dataset.py```), and you should first add ```image_path```  in the CSV files such as ```your_data_dir/xxx.jpg```.
 * Training of HierSwin, 
 ```
 python3 scripts/start_training.py --arch swinT 
