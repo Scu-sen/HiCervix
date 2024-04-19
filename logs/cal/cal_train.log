@@ -1,0 +1,204 @@
+2023-04-17 19:48:40,961: INFO: [cal.py:166]: WSDAN: using resnet101 as feature extractor, num_classes: 23, num_attentions: 32
+2023-04-17 19:48:43,918: INFO: [train_distributed.py:101]: Network weights save to ./FGVC/tct/wsdan-resnet101-cal/
+2023-04-17 19:48:44,163: INFO: [train_distributed.py:137]: Start training: Total epochs: 50, Batch size: 10, Training size: 24198, Validation size: 3480
+2023-04-17 19:48:44,163: INFO: [train_distributed.py:138]: 
+2023-04-17 19:48:44,164: INFO: [train_distributed.py:147]: Epoch 001, Learning Rate 0.001
+2023-04-17 20:09:46,972: INFO: [train_distributed.py:272]: Train: Loss 3.9192, Raw Acc (48.00, 81.82), Aug Acc (41.10, 76.25), Aux Acc (47.94, 83.10), lr 0.00095, Time 1262.80
+2023-04-17 20:10:17,238: INFO: [train_distributed.py:352]: Valid: Val Loss 1.7402, Val Acc (54.61, 89.73), Val Aux Acc (63.01, 94.11), Best 63.01, Time 24.34
+2023-04-17 20:10:17,238: INFO: [train_distributed.py:353]: 
+2023-04-17 20:10:18,228: INFO: [train_distributed.py:147]: Epoch 002, Learning Rate 0.000948766
+2023-04-17 20:31:13,553: INFO: [train_distributed.py:272]: Train: Loss 3.0784, Raw Acc (59.52, 90.76), Aug Acc (50.79, 85.54), Aux Acc (58.66, 91.06), lr 0.00090, Time 1255.32
+2023-04-17 20:31:36,916: INFO: [train_distributed.py:352]: Valid: Val Loss 1.3928, Val Acc (60.57, 94.02), Val Aux Acc (68.12, 96.13), Best 68.12, Time 22.27
+2023-04-17 20:31:36,947: INFO: [train_distributed.py:353]: 
+2023-04-17 20:31:39,628: INFO: [train_distributed.py:147]: Epoch 003, Learning Rate 0.000900078
+2023-04-17 20:52:35,652: INFO: [train_distributed.py:272]: Train: Loss 2.7473, Raw Acc (64.17, 93.34), Aug Acc (54.58, 88.09), Aux Acc (62.69, 92.52), lr 0.00085, Time 1256.02
+2023-04-17 20:52:58,977: INFO: [train_distributed.py:352]: Valid: Val Loss 1.2222, Val Acc (63.12, 92.92), Val Aux Acc (68.15, 96.64), Best 68.15, Time 22.15
+2023-04-17 20:52:58,992: INFO: [train_distributed.py:353]: 
+2023-04-17 20:53:02,089: INFO: [train_distributed.py:147]: Epoch 004, Learning Rate 0.000853889
+2023-04-17 21:13:57,749: INFO: [train_distributed.py:272]: Train: Loss 2.5877, Raw Acc (66.26, 93.83), Aug Acc (57.11, 89.12), Aux Acc (64.50, 93.15), lr 0.00081, Time 1255.65
+2023-04-17 21:14:20,873: INFO: [train_distributed.py:352]: Valid: Val Loss 1.1069, Val Acc (66.82, 94.70), Val Aux Acc (71.07, 96.25), Best 71.07, Time 22.31
+2023-04-17 21:14:20,874: INFO: [train_distributed.py:353]: 
+2023-04-17 21:14:23,683: INFO: [train_distributed.py:147]: Epoch 005, Learning Rate 0.000810071
+2023-04-17 21:35:19,947: INFO: [train_distributed.py:272]: Train: Loss 2.3872, Raw Acc (68.69, 94.98), Aug Acc (59.55, 90.56), Aux Acc (66.84, 94.37), lr 0.00077, Time 1256.26
+2023-04-17 21:35:43,116: INFO: [train_distributed.py:352]: Valid: Val Loss 1.0495, Val Acc (68.18, 95.36), Val Aux Acc (71.82, 97.02), Best 71.82, Time 22.24
+2023-04-17 21:35:43,117: INFO: [train_distributed.py:353]: 
+2023-04-17 21:35:46,217: INFO: [train_distributed.py:147]: Epoch 006, Learning Rate 0.0007685
+2023-04-17 21:56:42,359: INFO: [train_distributed.py:272]: Train: Loss 2.2490, Raw Acc (70.08, 95.72), Aug Acc (60.95, 91.75), Aux Acc (68.02, 94.95), lr 0.00073, Time 1256.14
+2023-04-17 21:57:04,497: INFO: [train_distributed.py:352]: Valid: Val Loss 1.0072, Val Acc (69.38, 95.45), Val Aux Acc (71.61, 96.96), Best 71.82, Time 22.14
+2023-04-17 21:57:04,498: INFO: [train_distributed.py:353]: 
+2023-04-17 21:57:05,499: INFO: [train_distributed.py:147]: Epoch 007, Learning Rate 0.000729063
+2023-04-17 22:18:02,893: INFO: [train_distributed.py:272]: Train: Loss 2.1333, Raw Acc (71.40, 96.28), Aug Acc (63.56, 92.40), Aux Acc (69.83, 95.42), lr 0.00069, Time 1257.38
+2023-04-17 22:18:26,121: INFO: [train_distributed.py:352]: Valid: Val Loss 0.9460, Val Acc (69.40, 96.49), Val Aux Acc (73.33, 97.23), Best 73.33, Time 22.18
+2023-04-17 22:18:26,127: INFO: [train_distributed.py:353]: 
+2023-04-17 22:18:29,003: INFO: [train_distributed.py:147]: Epoch 008, Learning Rate 0.00069165
+2023-04-17 22:39:25,099: INFO: [train_distributed.py:272]: Train: Loss 2.0563, Raw Acc (72.64, 96.91), Aug Acc (64.08, 93.04), Aux Acc (71.01, 95.88), lr 0.00066, Time 1256.06
+2023-04-17 22:39:47,875: INFO: [train_distributed.py:352]: Valid: Val Loss 0.9365, Val Acc (70.57, 96.16), Val Aux Acc (74.46, 97.74), Best 74.46, Time 21.84
+2023-04-17 22:39:47,877: INFO: [train_distributed.py:353]: 
+2023-04-17 22:39:50,534: INFO: [train_distributed.py:147]: Epoch 009, Learning Rate 0.000656157
+2023-04-17 23:00:46,649: INFO: [train_distributed.py:272]: Train: Loss 1.9906, Raw Acc (73.83, 97.22), Aug Acc (65.04, 93.40), Aux Acc (72.13, 95.87), lr 0.00062, Time 1256.11
+2023-04-17 23:01:08,985: INFO: [train_distributed.py:352]: Valid: Val Loss 0.9062, Val Acc (72.77, 96.61), Val Aux Acc (74.29, 97.05), Best 74.46, Time 22.33
+2023-04-17 23:01:08,985: INFO: [train_distributed.py:353]: 
+2023-04-17 23:01:10,425: INFO: [train_distributed.py:147]: Epoch 010, Learning Rate 0.000622485
+2023-04-17 23:22:08,003: INFO: [train_distributed.py:272]: Train: Loss 1.9315, Raw Acc (74.74, 97.19), Aug Acc (66.31, 93.75), Aux Acc (72.50, 95.89), lr 0.00059, Time 1257.57
+2023-04-17 23:22:31,186: INFO: [train_distributed.py:352]: Valid: Val Loss 0.9198, Val Acc (73.36, 97.08), Val Aux Acc (74.49, 97.20), Best 74.49, Time 22.07
+2023-04-17 23:22:31,188: INFO: [train_distributed.py:353]: 
+2023-04-17 23:22:34,300: INFO: [train_distributed.py:147]: Epoch 011, Learning Rate 0.000590541
+2023-04-17 23:43:29,992: INFO: [train_distributed.py:272]: Train: Loss 1.9145, Raw Acc (75.32, 97.47), Aug Acc (66.33, 93.64), Aux Acc (72.69, 96.31), lr 0.00056, Time 1255.69
+2023-04-17 23:43:53,139: INFO: [train_distributed.py:352]: Valid: Val Loss 0.8849, Val Acc (71.79, 97.38), Val Aux Acc (73.84, 97.47), Best 74.49, Time 22.22
+2023-04-17 23:43:53,140: INFO: [train_distributed.py:353]: 
+2023-04-17 23:43:53,142: INFO: [train_distributed.py:147]: Epoch 012, Learning Rate 0.000560237
+2023-04-18 00:04:50,646: INFO: [train_distributed.py:272]: Train: Loss 1.7521, Raw Acc (77.19, 98.13), Aug Acc (67.79, 94.87), Aux Acc (74.19, 96.65), lr 0.00053, Time 1257.50
+2023-04-18 00:05:12,867: INFO: [train_distributed.py:352]: Valid: Val Loss 0.8322, Val Acc (73.84, 97.08), Val Aux Acc (74.38, 97.71), Best 74.49, Time 22.22
+2023-04-18 00:05:12,867: INFO: [train_distributed.py:353]: 
+2023-04-18 00:05:13,910: INFO: [train_distributed.py:147]: Epoch 013, Learning Rate 0.000531487
+2023-04-18 00:26:12,160: INFO: [train_distributed.py:272]: Train: Loss 1.7672, Raw Acc (77.83, 98.02), Aug Acc (68.67, 94.66), Aux Acc (74.53, 96.85), lr 0.00050, Time 1258.25
+2023-04-18 00:26:34,977: INFO: [train_distributed.py:352]: Valid: Val Loss 0.9303, Val Acc (72.89, 96.76), Val Aux Acc (75.24, 97.86), Best 75.24, Time 21.70
+2023-04-18 00:26:34,978: INFO: [train_distributed.py:353]: 
+2023-04-18 00:26:34,980: INFO: [train_distributed.py:147]: Epoch 014, Learning Rate 0.000504213
+2023-04-18 00:47:32,112: INFO: [train_distributed.py:272]: Train: Loss 1.6550, Raw Acc (79.04, 98.43), Aug Acc (69.59, 95.12), Aux Acc (76.05, 97.21), lr 0.00048, Time 1257.13
+2023-04-18 00:47:54,071: INFO: [train_distributed.py:352]: Valid: Val Loss 0.8754, Val Acc (72.98, 97.56), Val Aux Acc (74.88, 97.68), Best 75.24, Time 21.96
+2023-04-18 00:47:54,071: INFO: [train_distributed.py:353]: 
+2023-04-18 00:47:54,072: INFO: [train_distributed.py:147]: Epoch 015, Learning Rate 0.000478339
+2023-04-18 01:08:51,604: INFO: [train_distributed.py:272]: Train: Loss 1.6619, Raw Acc (79.22, 98.63), Aug Acc (70.14, 95.66), Aux Acc (75.64, 97.13), lr 0.00045, Time 1257.53
+2023-04-18 01:09:13,617: INFO: [train_distributed.py:352]: Valid: Val Loss 0.8171, Val Acc (75.09, 97.74), Val Aux Acc (75.24, 97.74), Best 75.24, Time 22.01
+2023-04-18 01:09:13,618: INFO: [train_distributed.py:353]: 
+2023-04-18 01:09:14,609: INFO: [train_distributed.py:147]: Epoch 016, Learning Rate 0.000453792
+2023-04-18 01:30:12,392: INFO: [train_distributed.py:272]: Train: Loss 1.5720, Raw Acc (81.31, 98.38), Aug Acc (71.69, 95.56), Aux Acc (77.66, 97.17), lr 0.00043, Time 1257.78
+2023-04-18 01:30:36,077: INFO: [train_distributed.py:352]: Valid: Val Loss 0.8626, Val Acc (74.32, 97.26), Val Aux Acc (75.51, 97.53), Best 75.51, Time 22.34
+2023-04-18 01:30:36,099: INFO: [train_distributed.py:353]: 
+2023-04-18 01:30:36,103: INFO: [train_distributed.py:147]: Epoch 017, Learning Rate 0.000430505
+2023-04-18 01:51:33,404: INFO: [train_distributed.py:272]: Train: Loss 1.5196, Raw Acc (81.72, 98.83), Aug Acc (71.91, 95.85), Aux Acc (77.92, 97.58), lr 0.00041, Time 1257.29
+2023-04-18 01:51:55,686: INFO: [train_distributed.py:352]: Valid: Val Loss 0.8575, Val Acc (75.24, 97.29), Val Aux Acc (75.51, 97.95), Best 75.51, Time 22.28
+2023-04-18 01:51:55,687: INFO: [train_distributed.py:353]: 
+2023-04-18 01:51:57,040: INFO: [train_distributed.py:147]: Epoch 018, Learning Rate 0.000408413
+2023-04-18 02:12:54,128: INFO: [train_distributed.py:272]: Train: Loss 1.4921, Raw Acc (82.05, 99.12), Aug Acc (72.59, 96.06), Aux Acc (78.04, 97.47), lr 0.00039, Time 1257.08
+2023-04-18 02:13:16,443: INFO: [train_distributed.py:352]: Valid: Val Loss 0.8162, Val Acc (74.32, 97.74), Val Aux Acc (75.27, 97.92), Best 75.51, Time 22.31
+2023-04-18 02:13:16,443: INFO: [train_distributed.py:353]: 
+2023-04-18 02:13:16,444: INFO: [train_distributed.py:147]: Epoch 019, Learning Rate 0.000387454
+2023-04-18 02:34:13,856: INFO: [train_distributed.py:272]: Train: Loss 1.4867, Raw Acc (82.91, 98.89), Aug Acc (72.54, 95.82), Aux Acc (77.94, 97.17), lr 0.00037, Time 1257.41
+2023-04-18 02:34:40,225: INFO: [train_distributed.py:352]: Valid: Val Loss 0.8386, Val Acc (75.92, 97.41), Val Aux Acc (76.73, 97.86), Best 76.73, Time 22.17
+2023-04-18 02:34:40,231: INFO: [train_distributed.py:353]: 
+2023-04-18 02:34:42,075: INFO: [train_distributed.py:147]: Epoch 020, Learning Rate 0.000367571
+2023-04-18 02:55:36,742: INFO: [train_distributed.py:272]: Train: Loss 1.4051, Raw Acc (84.53, 98.96), Aug Acc (74.23, 96.12), Aux Acc (79.47, 97.43), lr 0.00035, Time 1254.67
+2023-04-18 02:55:59,000: INFO: [train_distributed.py:352]: Valid: Val Loss 0.8354, Val Acc (75.12, 97.86), Val Aux Acc (76.40, 97.80), Best 76.73, Time 22.26
+2023-04-18 02:55:59,000: INFO: [train_distributed.py:353]: 
+2023-04-18 02:55:59,001: INFO: [train_distributed.py:147]: Epoch 021, Learning Rate 0.000348709
+2023-04-18 03:16:56,330: INFO: [train_distributed.py:272]: Train: Loss 1.3668, Raw Acc (84.41, 99.27), Aug Acc (74.60, 96.75), Aux Acc (79.69, 97.82), lr 0.00033, Time 1257.33
+2023-04-18 03:17:19,775: INFO: [train_distributed.py:352]: Valid: Val Loss 0.8219, Val Acc (75.98, 97.83), Val Aux Acc (76.73, 97.92), Best 76.73, Time 21.82
+2023-04-18 03:17:19,777: INFO: [train_distributed.py:353]: 
+2023-04-18 03:17:22,575: INFO: [train_distributed.py:147]: Epoch 022, Learning Rate 0.000330814
+2023-04-18 03:38:17,814: INFO: [train_distributed.py:272]: Train: Loss 1.3263, Raw Acc (85.07, 99.27), Aug Acc (75.15, 96.60), Aux Acc (80.31, 97.72), lr 0.00031, Time 1255.22
+2023-04-18 03:38:39,826: INFO: [train_distributed.py:352]: Valid: Val Loss 0.8658, Val Acc (74.88, 97.59), Val Aux Acc (75.89, 97.56), Best 76.73, Time 22.01
+2023-04-18 03:38:39,827: INFO: [train_distributed.py:353]: 
+2023-04-18 03:38:39,828: INFO: [train_distributed.py:147]: Epoch 023, Learning Rate 0.000313838
+2023-04-18 03:59:37,068: INFO: [train_distributed.py:272]: Train: Loss 1.3097, Raw Acc (86.23, 99.26), Aug Acc (75.81, 96.88), Aux Acc (80.75, 97.91), lr 0.00030, Time 1257.24
+2023-04-18 03:59:59,112: INFO: [train_distributed.py:352]: Valid: Val Loss 0.8626, Val Acc (75.95, 97.38), Val Aux Acc (76.40, 97.53), Best 76.73, Time 22.04
+2023-04-18 03:59:59,112: INFO: [train_distributed.py:353]: 
+2023-04-18 03:59:59,113: INFO: [train_distributed.py:147]: Epoch 024, Learning Rate 0.000297733
+2023-04-18 04:20:56,984: INFO: [train_distributed.py:272]: Train: Loss 1.2867, Raw Acc (87.14, 99.36), Aug Acc (76.47, 96.50), Aux Acc (81.23, 97.69), lr 0.00028, Time 1257.87
+2023-04-18 04:21:19,322: INFO: [train_distributed.py:352]: Valid: Val Loss 0.9077, Val Acc (75.62, 97.17), Val Aux Acc (75.60, 97.71), Best 76.73, Time 22.34
+2023-04-18 04:21:19,322: INFO: [train_distributed.py:353]: 
+2023-04-18 04:21:19,323: INFO: [train_distributed.py:147]: Epoch 025, Learning Rate 0.000282454
+2023-04-18 04:42:16,976: INFO: [train_distributed.py:272]: Train: Loss 1.2106, Raw Acc (87.44, 99.47), Aug Acc (77.36, 96.80), Aux Acc (82.25, 97.87), lr 0.00027, Time 1257.65
+2023-04-18 04:42:39,299: INFO: [train_distributed.py:352]: Valid: Val Loss 0.8904, Val Acc (73.93, 97.80), Val Aux Acc (76.07, 97.83), Best 76.73, Time 22.32
+2023-04-18 04:42:39,299: INFO: [train_distributed.py:353]: 
+2023-04-18 04:42:39,300: INFO: [train_distributed.py:147]: Epoch 026, Learning Rate 0.00026796
+2023-04-18 05:03:36,544: INFO: [train_distributed.py:272]: Train: Loss 1.1858, Raw Acc (88.86, 99.40), Aug Acc (78.12, 96.83), Aux Acc (82.46, 97.93), lr 0.00025, Time 1257.24
+2023-04-18 05:03:58,682: INFO: [train_distributed.py:352]: Valid: Val Loss 0.8479, Val Acc (75.68, 97.71), Val Aux Acc (76.16, 97.89), Best 76.73, Time 22.14
+2023-04-18 05:03:58,683: INFO: [train_distributed.py:353]: 
+2023-04-18 05:03:58,683: INFO: [train_distributed.py:147]: Epoch 027, Learning Rate 0.000254209
+2023-04-18 05:24:55,785: INFO: [train_distributed.py:272]: Train: Loss 1.1727, Raw Acc (89.17, 99.40), Aug Acc (78.62, 96.89), Aux Acc (82.88, 97.91), lr 0.00024, Time 1257.10
+2023-04-18 05:25:17,786: INFO: [train_distributed.py:352]: Valid: Val Loss 0.8490, Val Acc (76.07, 97.71), Val Aux Acc (75.92, 97.71), Best 76.73, Time 22.00
+2023-04-18 05:25:17,786: INFO: [train_distributed.py:353]: 
+2023-04-18 05:25:19,161: INFO: [train_distributed.py:147]: Epoch 028, Learning Rate 0.000241164
+2023-04-18 05:46:16,567: INFO: [train_distributed.py:272]: Train: Loss 1.1260, Raw Acc (89.70, 99.47), Aug Acc (79.12, 97.18), Aux Acc (83.44, 98.06), lr 0.00023, Time 1257.39
+2023-04-18 05:46:38,879: INFO: [train_distributed.py:352]: Valid: Val Loss 0.8882, Val Acc (75.89, 97.47), Val Aux Acc (75.51, 97.68), Best 76.73, Time 22.31
+2023-04-18 05:46:38,879: INFO: [train_distributed.py:353]: 
+2023-04-18 05:46:38,880: INFO: [train_distributed.py:147]: Epoch 029, Learning Rate 0.000228788
+2023-04-18 06:07:36,438: INFO: [train_distributed.py:272]: Train: Loss 1.1381, Raw Acc (89.57, 99.54), Aug Acc (78.65, 96.63), Aux Acc (83.45, 97.89), lr 0.00022, Time 1257.56
+2023-04-18 06:07:58,414: INFO: [train_distributed.py:352]: Valid: Val Loss 0.9032, Val Acc (74.85, 97.83), Val Aux Acc (75.83, 97.98), Best 76.73, Time 21.97
+2023-04-18 06:07:58,415: INFO: [train_distributed.py:353]: 
+2023-04-18 06:07:58,416: INFO: [train_distributed.py:147]: Epoch 030, Learning Rate 0.000217047
+2023-04-18 06:28:55,773: INFO: [train_distributed.py:272]: Train: Loss 1.1061, Raw Acc (90.55, 99.55), Aug Acc (79.10, 96.78), Aux Acc (83.78, 97.93), lr 0.00021, Time 1257.36
+2023-04-18 06:29:17,566: INFO: [train_distributed.py:352]: Valid: Val Loss 0.9422, Val Acc (75.39, 97.23), Val Aux Acc (76.22, 97.47), Best 76.73, Time 21.79
+2023-04-18 06:29:17,567: INFO: [train_distributed.py:353]: 
+2023-04-18 06:29:17,567: INFO: [train_distributed.py:147]: Epoch 031, Learning Rate 0.000205909
+2023-04-18 06:50:15,175: INFO: [train_distributed.py:272]: Train: Loss 1.0429, Raw Acc (90.96, 99.62), Aug Acc (80.63, 97.40), Aux Acc (84.95, 98.23), lr 0.00020, Time 1257.61
+2023-04-18 06:50:38,788: INFO: [train_distributed.py:352]: Valid: Val Loss 0.9183, Val Acc (75.71, 97.20), Val Aux Acc (76.58, 97.47), Best 76.73, Time 22.41
+2023-04-18 06:50:38,788: INFO: [train_distributed.py:353]: 
+2023-04-18 06:50:38,790: INFO: [train_distributed.py:147]: Epoch 032, Learning Rate 0.000195342
+2023-04-18 07:11:36,214: INFO: [train_distributed.py:272]: Train: Loss 1.0519, Raw Acc (91.07, 99.59), Aug Acc (79.83, 97.10), Aux Acc (84.29, 98.07), lr 0.00019, Time 1257.42
+2023-04-18 07:11:58,568: INFO: [train_distributed.py:352]: Valid: Val Loss 0.8729, Val Acc (76.04, 97.59), Val Aux Acc (76.67, 97.71), Best 76.73, Time 22.35
+2023-04-18 07:11:58,568: INFO: [train_distributed.py:353]: 
+2023-04-18 07:11:58,569: INFO: [train_distributed.py:147]: Epoch 033, Learning Rate 0.000185318
+2023-04-18 07:32:56,170: INFO: [train_distributed.py:272]: Train: Loss 1.0817, Raw Acc (90.64, 99.55), Aug Acc (79.99, 96.73), Aux Acc (84.33, 97.67), lr 0.00018, Time 1257.60
+2023-04-18 07:33:18,070: INFO: [train_distributed.py:352]: Valid: Val Loss 0.8814, Val Acc (75.36, 97.77), Val Aux Acc (75.83, 97.71), Best 76.73, Time 21.90
+2023-04-18 07:33:18,071: INFO: [train_distributed.py:353]: 
+2023-04-18 07:33:18,071: INFO: [train_distributed.py:147]: Epoch 034, Learning Rate 0.000175808
+2023-04-18 07:54:13,823: INFO: [train_distributed.py:272]: Train: Loss 1.0093, Raw Acc (91.79, 99.72), Aug Acc (81.39, 97.02), Aux Acc (85.50, 98.03), lr 0.00017, Time 1255.75
+2023-04-18 07:54:35,942: INFO: [train_distributed.py:352]: Valid: Val Loss 0.8825, Val Acc (76.49, 97.56), Val Aux Acc (76.96, 97.80), Best 76.96, Time 21.04
+2023-04-18 07:54:35,953: INFO: [train_distributed.py:353]: 
+2023-04-18 07:54:38,180: INFO: [train_distributed.py:147]: Epoch 035, Learning Rate 0.000166786
+2023-04-18 08:15:31,827: INFO: [train_distributed.py:272]: Train: Loss 0.9948, Raw Acc (91.95, 99.70), Aug Acc (81.20, 97.38), Aux Acc (85.32, 98.26), lr 0.00016, Time 1253.64
+2023-04-18 08:15:52,944: INFO: [train_distributed.py:352]: Valid: Val Loss 0.9287, Val Acc (74.79, 97.47), Val Aux Acc (75.83, 97.71), Best 76.96, Time 21.11
+2023-04-18 08:15:52,944: INFO: [train_distributed.py:353]: 
+2023-04-18 08:15:52,945: INFO: [train_distributed.py:147]: Epoch 036, Learning Rate 0.000158227
+2023-04-18 08:36:47,813: INFO: [train_distributed.py:272]: Train: Loss 0.9648, Raw Acc (92.64, 99.75), Aug Acc (82.32, 97.11), Aux Acc (86.17, 98.09), lr 0.00015, Time 1254.87
+2023-04-18 08:37:08,866: INFO: [train_distributed.py:352]: Valid: Val Loss 0.8987, Val Acc (75.74, 97.53), Val Aux Acc (76.16, 97.65), Best 76.96, Time 21.05
+2023-04-18 08:37:08,866: INFO: [train_distributed.py:353]: 
+2023-04-18 08:37:08,867: INFO: [train_distributed.py:147]: Epoch 037, Learning Rate 0.000150108
+2023-04-18 08:58:03,950: INFO: [train_distributed.py:272]: Train: Loss 0.9732, Raw Acc (92.53, 99.77), Aug Acc (81.64, 97.36), Aux Acc (85.78, 98.29), lr 0.00014, Time 1255.08
+2023-04-18 08:58:28,177: INFO: [train_distributed.py:352]: Valid: Val Loss 0.8953, Val Acc (77.11, 97.95), Val Aux Acc (77.50, 98.04), Best 77.50, Time 20.85
+2023-04-18 08:58:28,185: INFO: [train_distributed.py:353]: 
+2023-04-18 08:58:29,879: INFO: [train_distributed.py:147]: Epoch 038, Learning Rate 0.000142405
+2023-04-18 09:19:22,610: INFO: [train_distributed.py:272]: Train: Loss 0.9517, Raw Acc (92.99, 99.72), Aug Acc (82.07, 97.15), Aux Acc (85.92, 98.10), lr 0.00014, Time 1252.73
+2023-04-18 09:19:43,558: INFO: [train_distributed.py:352]: Valid: Val Loss 0.9177, Val Acc (76.40, 97.50), Val Aux Acc (76.67, 97.56), Best 77.50, Time 20.94
+2023-04-18 09:19:43,559: INFO: [train_distributed.py:353]: 
+2023-04-18 09:19:43,559: INFO: [train_distributed.py:147]: Epoch 039, Learning Rate 0.000135097
+2023-04-18 09:40:38,635: INFO: [train_distributed.py:272]: Train: Loss 0.9787, Raw Acc (93.24, 99.60), Aug Acc (81.36, 96.74), Aux Acc (85.75, 97.77), lr 0.00013, Time 1255.07
+2023-04-18 09:40:59,685: INFO: [train_distributed.py:352]: Valid: Val Loss 0.9193, Val Acc (76.82, 97.80), Val Aux Acc (76.96, 97.86), Best 77.50, Time 21.05
+2023-04-18 09:40:59,686: INFO: [train_distributed.py:353]: 
+2023-04-18 09:40:59,687: INFO: [train_distributed.py:147]: Epoch 040, Learning Rate 0.000128164
+2023-04-18 10:01:54,212: INFO: [train_distributed.py:272]: Train: Loss 0.9285, Raw Acc (93.75, 99.75), Aug Acc (82.27, 97.28), Aux Acc (86.47, 98.10), lr 0.00012, Time 1254.52
+2023-04-18 10:02:15,509: INFO: [train_distributed.py:352]: Valid: Val Loss 0.9167, Val Acc (76.37, 97.77), Val Aux Acc (76.96, 97.77), Best 77.50, Time 21.29
+2023-04-18 10:02:15,510: INFO: [train_distributed.py:353]: 
+2023-04-18 10:02:15,511: INFO: [train_distributed.py:147]: Epoch 041, Learning Rate 0.000121587
+2023-04-18 10:23:10,420: INFO: [train_distributed.py:272]: Train: Loss 0.9208, Raw Acc (94.20, 99.72), Aug Acc (82.60, 96.93), Aux Acc (86.91, 97.93), lr 0.00012, Time 1254.91
+2023-04-18 10:23:32,648: INFO: [train_distributed.py:352]: Valid: Val Loss 0.9542, Val Acc (75.71, 97.80), Val Aux Acc (76.58, 97.83), Best 77.50, Time 21.21
+2023-04-18 10:23:32,649: INFO: [train_distributed.py:353]: 
+2023-04-18 10:23:32,651: INFO: [train_distributed.py:147]: Epoch 042, Learning Rate 0.000115348
+2023-04-18 10:44:27,571: INFO: [train_distributed.py:272]: Train: Loss 0.9028, Raw Acc (93.49, 99.83), Aug Acc (82.98, 96.99), Aux Acc (87.08, 98.01), lr 0.00011, Time 1254.92
+2023-04-18 10:44:48,890: INFO: [train_distributed.py:352]: Valid: Val Loss 0.9832, Val Acc (75.71, 97.20), Val Aux Acc (75.98, 97.56), Best 77.50, Time 21.32
+2023-04-18 10:44:48,890: INFO: [train_distributed.py:353]: 
+2023-04-18 10:44:48,891: INFO: [train_distributed.py:147]: Epoch 043, Learning Rate 0.000109429
+2023-04-18 11:05:43,427: INFO: [train_distributed.py:272]: Train: Loss 0.8894, Raw Acc (94.05, 99.74), Aug Acc (83.26, 97.11), Aux Acc (87.43, 98.08), lr 0.00010, Time 1254.54
+2023-04-18 11:06:04,560: INFO: [train_distributed.py:352]: Valid: Val Loss 0.9497, Val Acc (76.10, 97.29), Val Aux Acc (76.01, 97.47), Best 77.50, Time 21.13
+2023-04-18 11:06:04,561: INFO: [train_distributed.py:353]: 
+2023-04-18 11:06:04,561: INFO: [train_distributed.py:147]: Epoch 044, Learning Rate 0.000103813
+2023-04-18 11:26:59,565: INFO: [train_distributed.py:272]: Train: Loss 0.8682, Raw Acc (94.38, 99.74), Aug Acc (83.72, 97.25), Aux Acc (87.58, 98.29), lr 0.00010, Time 1255.00
+2023-04-18 11:27:20,611: INFO: [train_distributed.py:352]: Valid: Val Loss 0.9283, Val Acc (75.80, 97.35), Val Aux Acc (76.25, 97.47), Best 77.50, Time 21.04
+2023-04-18 11:27:20,611: INFO: [train_distributed.py:353]: 
+2023-04-18 11:27:20,612: INFO: [train_distributed.py:147]: Epoch 045, Learning Rate 9.84857e-05
+2023-04-18 11:48:15,451: INFO: [train_distributed.py:272]: Train: Loss 0.8833, Raw Acc (94.45, 99.85), Aug Acc (83.22, 96.93), Aux Acc (87.20, 97.99), lr 0.00009, Time 1254.84
+2023-04-18 11:48:36,570: INFO: [train_distributed.py:352]: Valid: Val Loss 0.9421, Val Acc (76.16, 97.68), Val Aux Acc (76.28, 97.65), Best 77.50, Time 21.12
+2023-04-18 11:48:36,571: INFO: [train_distributed.py:353]: 
+2023-04-18 11:48:36,572: INFO: [train_distributed.py:147]: Epoch 046, Learning Rate 9.34317e-05
+2023-04-18 12:09:31,108: INFO: [train_distributed.py:272]: Train: Loss 0.8914, Raw Acc (94.51, 99.72), Aug Acc (83.55, 96.90), Aux Acc (87.48, 97.89), lr 0.00009, Time 1254.53
+2023-04-18 12:09:52,368: INFO: [train_distributed.py:352]: Valid: Val Loss 0.9475, Val Acc (75.95, 97.35), Val Aux Acc (76.61, 97.56), Best 77.50, Time 21.26
+2023-04-18 12:09:52,369: INFO: [train_distributed.py:353]: 
+2023-04-18 12:09:52,370: INFO: [train_distributed.py:147]: Epoch 047, Learning Rate 8.86371e-05
+2023-04-18 12:30:47,290: INFO: [train_distributed.py:272]: Train: Loss 0.8722, Raw Acc (94.76, 99.77), Aug Acc (83.62, 97.07), Aux Acc (87.85, 98.05), lr 0.00008, Time 1254.92
+2023-04-18 12:31:08,372: INFO: [train_distributed.py:352]: Valid: Val Loss 0.9513, Val Acc (76.31, 97.38), Val Aux Acc (76.40, 97.26), Best 77.50, Time 21.08
+2023-04-18 12:31:08,372: INFO: [train_distributed.py:353]: 
+2023-04-18 12:31:08,373: INFO: [train_distributed.py:147]: Epoch 048, Learning Rate 8.40885e-05
+2023-04-18 12:52:03,191: INFO: [train_distributed.py:272]: Train: Loss 0.8585, Raw Acc (94.94, 99.77), Aug Acc (83.95, 96.83), Aux Acc (87.91, 97.96), lr 0.00008, Time 1254.82
+2023-04-18 12:52:24,235: INFO: [train_distributed.py:352]: Valid: Val Loss 0.9800, Val Acc (76.04, 97.29), Val Aux Acc (76.13, 97.59), Best 77.50, Time 21.04
+2023-04-18 12:52:24,235: INFO: [train_distributed.py:353]: 
+2023-04-18 12:52:24,236: INFO: [train_distributed.py:147]: Epoch 049, Learning Rate 7.97734e-05
+2023-04-18 13:13:19,055: INFO: [train_distributed.py:272]: Train: Loss 0.8348, Raw Acc (94.78, 99.77), Aug Acc (84.28, 97.13), Aux Acc (88.01, 97.99), lr 0.00008, Time 1254.82
+2023-04-18 13:13:40,248: INFO: [train_distributed.py:352]: Valid: Val Loss 0.9685, Val Acc (76.55, 97.59), Val Aux Acc (76.99, 97.68), Best 77.50, Time 21.19
+2023-04-18 13:13:40,249: INFO: [train_distributed.py:353]: 
+2023-04-18 13:13:40,249: INFO: [train_distributed.py:147]: Epoch 050, Learning Rate 7.56797e-05
+2023-04-18 13:34:35,370: INFO: [train_distributed.py:272]: Train: Loss 0.8568, Raw Acc (94.51, 99.88), Aug Acc (83.98, 96.91), Aux Acc (87.58, 97.93), lr 0.00007, Time 1255.12
+2023-04-18 13:34:56,248: INFO: [train_distributed.py:352]: Valid: Val Loss 0.9459, Val Acc (77.35, 97.53), Val Aux Acc (77.23, 97.68), Best 77.50, Time 20.88
+2023-04-18 13:34:56,248: INFO: [train_distributed.py:353]: 

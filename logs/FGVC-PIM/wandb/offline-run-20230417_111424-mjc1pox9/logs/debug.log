@@ -1,0 +1,24 @@
+2023-04-17 11:14:25,490 INFO    MainThread:14972 [wandb_setup.py:_flush():76] Configure stats pid to 14972
+2023-04-17 11:14:25,491 INFO    MainThread:14972 [wandb_setup.py:_flush():76] Loading settings from /root/.config/wandb/settings
+2023-04-17 11:14:25,491 INFO    MainThread:14972 [wandb_setup.py:_flush():76] Loading settings from /mnt/group-ai-medical-abp/private/daviddecai_sz/classification_FGVC/FGVC-PIM-master/wandb/settings
+2023-04-17 11:14:25,491 INFO    MainThread:14972 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-04-17 11:14:25,491 INFO    MainThread:14972 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-04-17 11:14:25,491 INFO    MainThread:14972 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'main.py', 'program': 'main.py'}
+2023-04-17 11:14:25,491 INFO    MainThread:14972 [wandb_setup.py:_flush():76] Applying login settings: {'mode': 'offline'}
+2023-04-17 11:14:25,523 INFO    MainThread:14972 [wandb_init.py:_log_setup():507] Logging user logs to /mnt/group-ai-medical-abp/private/daviddecai_sz/classification_FGVC/FGVC-PIM-master/wandb/offline-run-20230417_111424-mjc1pox9/logs/debug.log
+2023-04-17 11:14:25,554 INFO    MainThread:14972 [wandb_init.py:_log_setup():508] Logging internal logs to /mnt/group-ai-medical-abp/private/daviddecai_sz/classification_FGVC/FGVC-PIM-master/wandb/offline-run-20230417_111424-mjc1pox9/logs/debug-internal.log
+2023-04-17 11:14:25,587 INFO    MainThread:14972 [wandb_init.py:init():547] calling init triggers
+2023-04-17 11:14:25,587 INFO    MainThread:14972 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {'project_name': 'TCT-T2', 'exp_name': 'TCT_0412', 'c': 'configs/TCT_SwinT.yaml', 'train_root': '../datas/train/', 'val_root': '../datas/test/', 'data_size': 384, 'num_workers': 24, 'batch_size': 16, 'model_name': 'swin-t', 'optimizer': 'SGD', 'max_lr': 0.0005, 'wdecay': 0.0005, 'max_epochs': 50, 'warmup_batchs': 800, 'use_fpn': True, 'fpn_size': 1536, 'use_selection': True, 'num_classes': 23, 'num_selects': {'layer1': 2048, 'layer2': 512, 'layer3': 128, 'layer4': 32}, 'use_combiner': True, 'lambda_b': 0.5, 'lambda_s': 0.0, 'lambda_n': 5.0, 'lambda_c': 1.0, 'use_wandb': True, 'train_csv': '/mnt/group-ai-medical-abp/private/daviddecai/dataset/hierarchy_classification/version2023/train_image_path_keep_species.csv', 'val_csv': '/mnt/group-ai-medical-abp/private/daviddecai/dataset/hierarchy_classification/version2023/val_image_path_keep_species.csv', 'train_batch_size': 8, 'eval_batch_size': 8, 'wandb_entity': 'poyung', 'pretrained': None, 'use_amp': True, 'update_freq': 2, 'log_freq': 100, 'eval_freq': 10, 'save_dir': './records/TCT-T2/TCT_0412/', 'device': device(type='cuda', index=0)}
+2023-04-17 11:14:25,588 INFO    MainThread:14972 [wandb_init.py:init():595] starting backend
+2023-04-17 11:14:25,588 INFO    MainThread:14972 [wandb_init.py:init():599] setting up manager
+2023-04-17 11:14:25,607 INFO    MainThread:14972 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-04-17 11:14:25,627 INFO    MainThread:14972 [wandb_init.py:init():605] backend started and connected
+2023-04-17 11:14:25,666 INFO    MainThread:14972 [wandb_init.py:init():695] updated telemetry
+2023-04-17 11:14:26,534 INFO    MainThread:14972 [wandb_init.py:init():782] starting run threads in backend
+2023-04-17 11:14:29,467 INFO    MainThread:14972 [wandb_run.py:_console_start():2157] atexit reg
+2023-04-17 11:14:29,468 INFO    MainThread:14972 [wandb_run.py:_redirect():2012] redirect: SettingsConsole.WRAP_RAW
+2023-04-17 11:14:29,468 INFO    MainThread:14972 [wandb_run.py:_redirect():2077] Wrapping output streams.
+2023-04-17 11:14:29,468 INFO    MainThread:14972 [wandb_run.py:_redirect():2102] Redirects installed.
+2023-04-17 11:14:29,470 INFO    MainThread:14972 [wandb_init.py:init():824] run started, returning control to user process
+2023-04-17 11:14:40,665 WARNING MsgRouterThr:14972 [router.py:message_loop():77] message_loop has been closed
