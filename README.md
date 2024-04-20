@@ -18,7 +18,55 @@ information of fine-grained features.
 <!-- The benchmark method of HierSwin and all the other methods implemented in this manuscript are organized in this repository. --> 
 #### Installation
 
-The implementation of HierSwin is based on the repo [making-better-mistakes](https://github.com/fiveai/making-better-mistakes), where we rewrote the dataset loader for HiCervix and [albumentations](https://albumentations.ai/) is utilized for image augmentations.
+The implementation of HierSwin is based on the repo [making-better-mistakes](https://github.com/fiveai/making-better-mistakes), where we rewrote the dataset loader as follow for HiCervix and [albumentations](https://albumentations.ai/) is utilized for image augmentations.
+```
+import random
+import cv2
+import numpy as np
+import pandas as pd
+from PIL import Image
+from torch.utils.data import Dataset
+
+class InputDataset(Dataset):
+    def __init__(self, data_csv_file, train=True, transform=None,
+            target_transform=None, albu_transform=None):
+        """data_csv_file: csv_file, [image_path, class_id]
+            train: bool
+            transform: image transform
+            albu_transform: albumentations lib support
+        """
+        self.train = train
+        self.transform = transform
+        self.target_transform = target_transform
+        self.albu_transform = albu_transform
+
+        # load data
+        df = pd.read_csv(data_csv_file)
+        self.data = []
+        for n in range(len(df)):
+            row = df.iloc[n]
+            image_path = row["image_path"]
+            class_id = int(row["class_id"])
+            self.data.append((image_path, class_id,))
+        if self.train:
+            random.shuffle(self.data)
+
+    def __getitem__(self, index):
+        img_path, target = self.data[index]
+        img = cv2.imread(img_path, cv2.IMREAD_COLOR)
+        img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+
+        if self.albu_transform is not None:
+           img = self.albu_transform(image=img)["image"]
+        img = Image.fromarray(img)
+        # transform
+        if self.transform is not None:
+            img = self.transform(img)
+        return img, target
+
+    def __len__(self):
+        return len(self.data)
+```
 
 
 #### Dataset preparation
