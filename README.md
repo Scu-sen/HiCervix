@@ -112,16 +112,30 @@ python3 scripts/start_training.py --arch swinT
         --epochs 50
 ```
 
-* Evaluation of HierSwin
-
+* Evaluation of HierSwin, and the pre-trained HierSwin models can be [downloaded]() 
 ```
 python3 scripts/start_testing.py 
         --experiments_json hierswin_alpha0.4/opts.json 
-        --checkpoint_path hierswin_alpha0.4/model_snapshots/checkpoint.epoch0050.pth.tar 
+        --checkpoint_path hierswin_alpha0.4/model_snapshots/checkpoint.epoch0030.pth.tar 
         --test-csv test_hierswin.csv
 ```
-* The HierSwin and other methods usually will ouput the probabilities for finest level's hierarchy, the postprocess of the original evaluation results for HierSwin and other methods can be referenced in ```HiCervix_evaluation.ipynb```.
-
+* The HierSwin and other methods usually will ouput the probabilities for finest level's hierarchy, the postprocess of the original evaluation results for HierSwin and other methods can be referenced in ```HiCervix_evaluation.ipynb```. For HierSwin, run the following script
+```
+python3 scripts/metrics_eval.py --res-csv hierswin_alpha0.4/HierSwin_res.csv
+```
+and you should get the following results:
+```Level_1 accuracy: 0.9208
+level_1 hierarchical distanse: 0.0549
+##############################
+Level_2 accuracy: 0.7836
+level_2 hierarchical distande: 0.1821
+##############################
+Level_3 accuracy: 0.7835
+level_3 hierarchical distande: 0.2082
+##############################
+Average accuracy: 0.8293
+Average hierarchical distance: 0.1484
+```
 
 
 
