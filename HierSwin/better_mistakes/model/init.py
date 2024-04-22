@@ -1,6 +1,7 @@
 import torch.cuda
 import torch.nn
 from torchvision import models
+import timm
 
 
 def init_model_on_gpu(gpus_per_node, opts):
@@ -8,12 +9,18 @@ def init_model_on_gpu(gpus_per_node, opts):
     pretrained = False if not hasattr(opts, "pretrained") else opts.pretrained
     distributed = False if not hasattr(opts, "distributed") else opts.distributed
     print("=> using model '{}', pretrained={}".format(opts.arch, pretrained))
-    model = arch_dict[opts.arch](pretrained=pretrained)
+    # model = arch_dict[opts.arch](pretrained=pretrained)
+    if opts.arch == "swinT":
+        model = timm.create_model('swin_large_patch4_window12_384_in22k', pretrained=False)
+    else:
+        model = arch_dict[opts.arch](pretrained=pretrained)
 
     if opts.arch == "resnet18":
         feature_dim = 512
     elif opts.arch == "resnet50":
         feature_dim = 2048
+    elif opts.arch == "swinT":
+        feature_dim = 1536
     else:
         ValueError("Unknown architecture ", opts.arch)
 
@@ -46,7 +53,8 @@ def init_model_on_gpu(gpus_per_node, opts):
             else:
                 model.fc = torch.nn.Sequential(torch.nn.Linear(in_features=feature_dim, out_features=opts.embedding_size, bias=True))
     else:
-        model.fc = torch.nn.Sequential(torch.nn.Dropout(opts.dropout), torch.nn.Linear(in_features=feature_dim, out_features=opts.num_classes, bias=True))
+        # model.fc = torch.nn.Sequential(torch.nn.Dropout(opts.dropout), torch.nn.Linear(in_features=feature_dim, out_features=opts.num_classes, bias=True))
+        model.head =torch.nn.Linear(in_features=feature_dim, out_features=opts.num_classes)
 
     if distributed:
         # For multiprocessing distributed, DistributedDataParallel constructor

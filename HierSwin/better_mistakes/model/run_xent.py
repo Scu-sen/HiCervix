@@ -87,7 +87,6 @@ def run(loader, model, loss_function, distances, all_soft_labels, classes, opts,
             
             
             # for soft-labels we need to add a log_softmax and get the soft labels
-            """
             if opts.loss == "soft-labels":
                 output = torch.nn.functional.log_softmax(output, dim=1)
                 if opts.soft_labels:
@@ -97,7 +96,6 @@ def run(loader, model, loss_function, distances, all_soft_labels, classes, opts,
                 loss = loss_function(output, target_distribution)
             else:
                 loss = loss_function(output, target)
-            """
             if not is_inference:
                 optimizer.zero_grad()
                 loss.backward()

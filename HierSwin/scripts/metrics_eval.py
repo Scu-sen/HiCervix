@@ -163,6 +163,7 @@ def add_level_pred(df):
 
 def find_level_name_v2(class_name, level=1):
     """fill the finest label using the coarse lable"""
+    class_name = class_name.strip()
     path_node_classes = classname_paths[class_name]
     if len(path_node_classes)>level:
         return path_node_classes[level]
