@@ -112,7 +112,7 @@ python3 scripts/start_training.py --arch swinT
         --epochs 50
 ```
 
-* Evaluation of HierSwin, and the pre-trained HierSwin models can be [downloaded]() 
+* Evaluation of HierSwin, and the pre-trained HierSwin models can be [downloaded](https://drive.google.com/file/d/1TsULQjIsLHsKnO6DOin7MNXQy5Ycw3M9/view?usp=drive_link) 
 ```
 python3 scripts/start_testing.py 
         --experiments_json hierswin_alpha0.4/opts.json 
