@@ -70,7 +70,7 @@ class InputDataset(Dataset):
 
 
 #### Dataset preparation
-HiCervix can be downloaded from Zenodo (https://zenodo.org/records/xxx). The dataset is splitted into three parts: train, validation, and test, each associated with one CSV file.
+HiCervix can be downloaded from Zenodo (https://zenodo.org/records/11081816). The dataset is splitted into three parts: train, validation, and test, each associated with one CSV file.
 ```
 .
 ├── test
@@ -103,6 +103,7 @@ For more details on the preprocessing of the Hierarchical structure of HiCervix,
 The CSV above files are used to specify the input for the training, evaluation, and test dataset (```dataset.py```), and you should first add ```image_path```  in the CSV files such as ```your_data_dir/xxx.jpg```.
 * Training of HierSwin, 
 ```
+cd HierSwin
 python3 scripts/start_training.py --arch swinT 
         --loss hierarchical-cross-entropy 
         --alpha 0.4 
