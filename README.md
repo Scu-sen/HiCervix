@@ -70,7 +70,7 @@ class InputDataset(Dataset):
 
 
 #### Dataset preparation
-HiCervix can be downloaded from Zenodo (https://zenodo.org/records/11081816). The dataset is splitted into three parts: train, validation, and test, each associated with one CSV file.
+HiCervix can be downloaded from [Zenodo](https://zenodo.org/records/11081816). The dataset is splitted into three parts: train, validation, and test, each associated with one CSV file.
 ```
 .
 ├── test
@@ -115,6 +115,7 @@ python3 scripts/start_training.py --arch swinT
 
 * Evaluation of HierSwin, and the pre-trained HierSwin models can be [downloaded](https://drive.google.com/file/d/1TsULQjIsLHsKnO6DOin7MNXQy5Ycw3M9/view?usp=drive_link) 
 ```
+cd HierSwin
 python3 scripts/start_testing.py 
         --experiments_json hierswin_alpha0.4/opts.json 
         --checkpoint_path hierswin_alpha0.4/model_snapshots/checkpoint.epoch0030.pth.tar 
@@ -122,6 +123,7 @@ python3 scripts/start_testing.py
 ```
 * The HierSwin and other methods usually will ouput the probabilities for finest level's hierarchy, the postprocess of the original evaluation results for HierSwin and other methods can be referenced in ```HiCervix_evaluation.ipynb```. For HierSwin, run the following script
 ```
+cd HierSwin
 python3 scripts/metrics_eval.py --res-csv hierswin_alpha0.4/HierSwin_res.csv
 ```
 and you should get the following results:
