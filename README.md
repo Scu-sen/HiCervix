@@ -118,7 +118,7 @@ python3 scripts/start_training.py --arch swinT
 cd HierSwin
 python3 scripts/start_testing.py 
         --experiments_json hierswin_alpha0.4/opts.json 
-        --checkpoint_path hierswin_alpha0.4/model_snapshots/checkpoint.epoch0030.pth.tar 
+        --checkpoint_path hierswin_alpha0.4/model_snapshots/HierSwin_best.pth.tar 
         --test-csv test_hierswin.csv
 ```
 * The HierSwin and other methods usually will ouput the probabilities for finest level's hierarchy, the postprocess of the original evaluation results for HierSwin and other methods can be referenced in ```HiCervix_evaluation.ipynb```. For HierSwin, run the following script
