@@ -1,4 +1,4 @@
-# [HiCervix](https://ieeexplore.ieee.org/document/10571965) (accpeted by TMI )
+### [HiCervix](https://ieeexplore.ieee.org/document/10571965) (accpeted by TMI )
 ####
 
 This repo contains the original source code of the paper _HiCervix: An Extensive Hierarchical Dataset and Benchmark for Cervical Cytology Classification_.
