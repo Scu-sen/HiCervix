@@ -1,7 +1,6 @@
-### [HiCervix](https://ieeexplore.ieee.org/document/10571965) (accpeted by TMI )
+# HiCervix
 ####
-
-This repo contains the original source code of the paper _HiCervix: An Extensive Hierarchical Dataset and Benchmark for Cervical Cytology Classification_.
+This repo contains the original source code of the paper [_HiCervix: An Extensive Hierarchical Dataset and Benchmark for Cervical Cytology Classification_](https://ieeexplore.ieee.org/document/10571965) (accpeted by TMI)
 
 In this paper, we release the largest three-level hierarchical cervical dataset (HiCervix), and propose a hierarchical vision transformer-based classification benchmark method (HierSwin).
 
@@ -148,3 +147,4 @@ HiCervix and HierSwin are released under the GPLv3 License and is available for 
 
 ### Citation
 Please use below to cite this paper if you find our work useful in your research.
+https://ieeexplore.ieee.org/document/10571965
