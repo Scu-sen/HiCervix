@@ -8,7 +8,7 @@ In this paper, we release the largest three-level hierarchical cervical dataset 
 
 HiCervix includes 40,229 cervical cells and is categorized into 29 annotated classes.   These classes are organized within a three-level hierarchical tree
 to capture fine-grained subtype information. 
-![这是图片](figure1_new.pdf)
+![这是图片](figure1_new.png)
 
 
 ### HierSwin(benchmark method):
