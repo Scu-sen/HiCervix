@@ -139,7 +139,9 @@ Average accuracy: 0.8293
 Average hierarchical distance: 0.1484
 ```
 
+## Issues
 
+Please open new threads or address all questions to xiyue.wang.scu@gmail.com
 
 ## License
 
@@ -147,4 +149,12 @@ HiCervix and HierSwin are released under the GPLv3 License and is available for 
 
 ### Citation
 Please use below to cite this paper if you find our work useful in your research.
-https://ieeexplore.ieee.org/document/10571965
+`
+@article{cai2024hicervix,
+  title={HiCervix: An Extensive Hierarchical Dataset and Benchmark for Cervical Cytology Classification},
+  author={Cai, De and Chen, Jie and Zhao, Junhan and Xue, Yuan and Yang, Sen and Yuan, Wei and Feng, Min and Weng, Haiyan and Liu, Shuguang and Peng, Yulong and others},
+  journal={IEEE Transactions on Medical Imaging},
+  year={2024},
+  publisher={IEEE}
+}
+`
