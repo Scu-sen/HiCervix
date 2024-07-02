@@ -152,10 +152,14 @@ Please use below to cite this paper if you find our work useful in your research
 
 ```
 @article{cai2024hicervix,
-  title={HiCervix: An Extensive Hierarchical Dataset and Benchmark for Cervical Cytology Classification},
-  author={Cai, De and Chen, Jie and Zhao, Junhan and Xue, Yuan and Yang, Sen and Yuan, Wei and Feng, Min and Weng, Haiyan and Liu, Shuguang and Peng, Yulong and others},
-  journal={IEEE Transactions on Medical Imaging},
+  author={Cai, De and Chen, Jie and Zhao, Junhan and Xue, Yuan and Yang, Sen and Yuan, Wei and Feng, Min and Weng, Haiyan and Liu, Shuguang and Peng, Yulong and Zhu, Junyou and Wang, Kanran and Jackson, Christopher and Tang, Hongping and Huang, Junzhou and Wang, Xiyue},
+  journal={IEEE Transactions on Medical Imaging}, 
+  title={HiCervix: An Extensive Hierarchical Dataset and Benchmark for Cervical Cytology Classification}, 
   year={2024},
-  publisher={IEEE}
-}
+  volume={},
+  number={},
+  pages={1-1},
+  keywords={Feature extraction;Hospitals;Accuracy;Task analysis;Correlation;Cervical cancer;Pathology;Cervical cancer screening;cervical cytology;hierarchical classification;fine-grained visual classification;cervical dataset},
+  doi={10.1109/TMI.2024.3419697}}
+
 ```
