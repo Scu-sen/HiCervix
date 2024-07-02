@@ -150,7 +150,7 @@ HiCervix and HierSwin are released under the GPLv3 License and is available for 
 ### Citation
 Please use below to cite this paper if you find our work useful in your research.
 
-`
+```
 @article{cai2024hicervix,
   title={HiCervix: An Extensive Hierarchical Dataset and Benchmark for Cervical Cytology Classification},
   author={Cai, De and Chen, Jie and Zhao, Junhan and Xue, Yuan and Yang, Sen and Yuan, Wei and Feng, Min and Weng, Haiyan and Liu, Shuguang and Peng, Yulong and others},
@@ -158,4 +158,4 @@ Please use below to cite this paper if you find our work useful in your research
   year={2024},
   publisher={IEEE}
 }
-`
+```
