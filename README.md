@@ -69,7 +69,7 @@ class InputDataset(Dataset):
 
 
 #### Dataset preparation
-HiCervix can be downloaded from [Zenodo](https://zenodo.org/records/11081816). The dataset is splitted into three parts: train, validation, and test, each associated with one CSV file.
+HiCervix can be downloaded from [Zenodo](https://zenodo.org/records/11087263). The dataset is splitted into three parts: train, validation, and test, each associated with one CSV file.
 ```
 .
 ├── test
