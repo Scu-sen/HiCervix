@@ -1,6 +1,6 @@
 # HiCervix: An Extensive Hierarchical Dataset and Benchmark for Cervical Cytology Classification (*IEEE Transactions on Medical Imaging*)
 
-[Journal Link](https://www.sciencedirect.com/science/article/abs/pii/S1361841522002730)
+[Journal Link](https://ieeexplore.ieee.org/document/10571965)
 
 ####
 This repo contains the original source code of the paper [_HiCervix: An Extensive Hierarchical Dataset and Benchmark for Cervical Cytology Classification_](https://ieeexplore.ieee.org/document/10571965) (accpeted by IEEE-TMI)
