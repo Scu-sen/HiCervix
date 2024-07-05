@@ -1,4 +1,6 @@
-# HiCervix
+# HiCervix: An Extensive Hierarchical Dataset and Benchmark for Cervical Cytology Classification (*IEEE Transactions on Medical Imaging*)
+
+[Journal Link]([https://www.sciencedirect.com/science/article/abs/pii/S1361841522002730](https://ieeexplore.ieee.org/document/10571965))
 ####
 This repo contains the original source code of the paper [_HiCervix: An Extensive Hierarchical Dataset and Benchmark for Cervical Cytology Classification_](https://ieeexplore.ieee.org/document/10571965) (accpeted by IEEE-TMI)
 
@@ -148,7 +150,7 @@ Please open new threads or address all questions to xiyue.wang.scu@gmail.com
 HiCervix and HierSwin are released under the GPLv3 License and is available for non-commercial academic purposes.
 
 ### Citation
-Please use below to cite this paper if you find our work useful in your research.
+Please use below to cite this [paper](https://ieeexplore.ieee.org/document/10571965) if you find our work useful in your research.
 
 ```
 @article{cai2024hicervix,
