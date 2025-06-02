@@ -103,11 +103,13 @@ The hierarchical tree structure and lowest-common-tree distances files were gene
 For more details on the preprocessing of the Hierarchical structure of HiCervix, please see the ``` HiCervix_pre-processing.ipynb```
 #### Training and evaluation
 The CSV above files are used to specify the input for the training, evaluation, and test dataset (```dataset.py```), and you should first add ```image_path```  in the CSV files such as ```your_data_dir/xxx.jpg```.
-* Training of HierSwin, 
+* Training of HierSwin,
+* Download the pretrained  ​​[official Swin Transformer checkpoint​​](https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_large_patch4_window12_384_22k.pth)  released on GitHub to initialize training for our HiCervix dataset.
 ```
 cd HierSwin
 python3 scripts/start_training.py --arch swinT 
-        --loss hierarchical-cross-entropy 
+        --loss hierarchical-cross-entropy
+        --pretrained_folder "pretrained_Swin_Transformer/*.pth" \  # Path to pretrained weights  
         --alpha 0.4 
         --output hierswin_alpha0.4 
         --train-csv train_hierswin.csv
